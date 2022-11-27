@@ -1,5 +1,6 @@
 :root {
   --primary-brand-color: #4d5ae5;
+  --dark-brand-color: #404bbf;
   --dark-color: #2e2f42;
   --success-first-color: #31d0aa;
   --success-second-color: #31d0aa;
@@ -54,8 +55,9 @@ body {
   color: var(--dark-color);
 }
 
-.nav-link:hover {
-  color: var(--text-color);
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--primary-brand-color);
 }
 
 .address {
@@ -69,6 +71,11 @@ body {
   line-height: calc(24 / 16);
   letter-spacing: 0.02em;
   color: var(--text-color);
+}
+
+.header-contacts-link:hover,
+.header-contacts-link:focus {
+  color: var(--primary-brand-color);
 }
 
 .hero {
@@ -92,6 +99,11 @@ body {
   color: var(--light-first-color);
   background-color: var(--primary-brand-color);
   cursor: pointer;
+}
+
+.main-button:hover,
+.main-button:focus {
+  background-color: var(--dark-brand-color);
 }
 
 .features {
@@ -177,7 +189,9 @@ body {
 }
 .filters-item {
 }
-.filters-button.current {
+.filters-button.current,
+.filters-button:hover,
+.filters-button:focus {
   background-color: var(--primary-brand-color);
   color: var(--light-first-color);
 }
